@@ -1,0 +1,326 @@
+*{
+padding:0px;
+margin:0px;
+}
+
+p{
+color:white;
+}
+
+a{
+font-family:helvetica;
+}
+
+#ativo{
+	background:white;
+	color:black;
+	border-bottom:;
+	border-right:;
+}
+
+#bloco{
+margin-top:40px;
+padding:10px;
+margin-left:5%;
+width:90%;
+margin-right:5%;
+border:5px solid white;
+text-align:justify;
+background:black;
+border-radius:20px;
+}
+
+h1{
+font-family:Mv Boli;
+color:white;
+font-size:32px;
+text-align:center;
+}
+
+article{
+background-color:none;
+text-align:center;
+}
+
+
+img{
+	text-align:center;
+}
+
+p1{
+	text-align:center;
+}
+
+.modalDialog {
+text-align:center;
+    display:none;
+	position: fixed;
+	top: px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: none;
+	z-index: 99999;
+	opacity:0;
+	pointer-events: none;
+	height:100%;
+	visibility:hidden;
+}
+
+.modalDialog:target {
+	-webkit-transition: background 1s ease-in;
+	-moz-transition: background 1s ease-in;
+	transition: background 1s ease-in;
+	opacity:1;
+	pointer-events: auto;
+	display:block;
+	visibility:visible;
+	background:rgba(0,0,0,0.75);
+}
+
+.modalDialog > #caraca {
+	text-align:center;
+	opacity:1;
+	width: 400px;
+	margin-top:100px;
+	position: relative;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background:;
+	width:50%;
+	margin-left:25%;
+	margin-right:25%;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+#caraca{
+border:1px solid white;
+background:black;
+height:auto;
+width:auto;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+#contato{
+padding:5px;
+border:none;
+text-decoration:none;
+color:black;
+background:white;
+border-radius:20px;
+font-size:24px;
+-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+#contato:hover{
+color:white;
+background:blue;
+border:none;
+}
+
+.close {
+	background: white;
+	color: black;
+	position: absolute;
+	right: -16px;
+	text-align: center;
+	top: -10px;
+	width: 30px;
+	height: auto;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 50px;
+	border:1px solid white;
+	opacity:0%;
+}
+
+#caraca > a{
+	font-size:24px;
+	}
+
+.close:hover { background: red;
+color:white; 
+}
+
+.home{
+	width:20%;
+}
+
+.imagem1{
+	height:auto;
+    text-align:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.imagem2{
+	height:auto;
+    text-align:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:50%;
+}
+
+.imagem3{
+	height:auto;
+    text-align:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:40%;
+}
+
+.imagem4{
+	height:auto;
+    text-align:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:30%;
+}
+
+form{
+	color:white;
+	text-align:left;
+	padding:10px;
+}
+
+h2{
+font-family:Georgia;
+color:white;
+font-size:24px;
+text-align:center;
+}
+
+#responda{
+font-size:24px;
+border:none;
+text-decoration:none;
+color:cyan
+}
+
+#responda:visited{
+	color:purple;
+}
+
+@media screen and (max-width: 1023px) and (max-height: 1023px){
+	.opa1{
+		width:100%;
+		background:red;
+	}
+	
+	.home{
+		width:100%;
+	}
+	
+	.imagem1{
+		width:80%;
+	}
+	
+	a{
+		font-size:14px;
+	}
+	
+	h1{
+		font-size:28px;
+	}
+	
+	h2{
+		font-size:22px;
+	}
+	
+	.imagem2, .imagem3, .imagem4{
+		width:80%
+	}
+}
+
+@media screen and (max-width: 720px) and (max-height: 720px){
+p{
+		font-size:20px;
+	}
+	
+	#contato{
+	font-size:16px;
+	}
+	
+	#caraca > p{
+	font-size:16px;
+	}
+	
+	#caraca > h2{
+	font-size:20px;
+	}
+	
+	#caraca > a{
+	font-size:16px;
+	}
+	
+	.modalDialog > #caraca{
+	width:75%;
+	margin-left:12.5%;
+	margin-right:12.5%;
+	}
+	
+	#responda{
+font-size:16px;
+}
+
+.close {
+	width:24px;
+	right:-11px;
+	top:-7px;
+	background:red;
+	color:white;
+	
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (min-height:1024px) and (min-width: 768px){
+	.opa1{
+		width:100%;
+	}
+	
+	.home{
+		width:100%;
+	}
+	
+	#bloco{
+		margin-top:220px;
+	}
+	
+	a{
+		font-size:24px;
+	}
+
+	
+}
+
+@media screen and (max-width: 1024px) and (max-height: 1366px) and (min-height: 1366px) and (min-width: 1024px){
+	.opa1{
+		width:100%;
+	}
+	
+	.home{
+		width:100%;
+	}
+	
+	#bloco{
+		margin-top:220px;
+	}
+	
+	a{
+		font-size:24px;
+	}
+	
+}

@@ -1,0 +1,92 @@
+﻿*{margin:0;
+ padding:0;
+ }
+ #navicon{
+	display:none;
+}
+
+a{
+border-bottom:1px solid white;
+border-right:1px solid white;
+border-left:1px solid white;
+width:;
+}
+
+li{
+width:16%;
+}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 20px;
+background-image:url(../Img/back.jpg);
+background-repeat:repeat-y;
+background-size:100%;
+}
+
+/*esse aqui oculta as marcações da lista*/ 
+.menu{
+list-style:none;
+float:left;
+width:100%
+}
+
+/*esse faz ficar na horizontal*/
+.menu li{
+position:relative;
+float:left;
+background:black;
+}
+
+/*esse aqui muda a cor dos links e tira o efeito de link no menu não suspenso*/
+.menu li a{
+	color:white;
+	text-decoration:none;
+	padding:5px 10px;
+	display:block;
+background:black;
+}
+
+/*tira o efeito de lista*/
+.menu li ul{
+position:absolute; 
+top:100%; 
+left:0;
+background-color:black; 
+color:white;
+display:none;
+}
+
+/*esse faz o efeito de dropdown*/
+.menu li:hover ul, .menu li.over ul{
+	display:block;
+	}
+	
+/*esse organiza as bordas e texto no menu dropdown*/
+.menu li ul li{
+display:block;
+width:100%;
+}
+
+/*essa aqui é para o efeito do mouse sobre o menu muda a cor de fundo e cor da fonte qdo selecionado com o mouse em cima*/
+.menu li a:hover{
+background:white; 
+color:black; 
+text-shadow:0px 0px 5px #fff; 
+-webkit-transition: 1s all;
+  -ms-transition: 1s all;
+  -moz-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}	
+
+#menu{
+margin-left:300px;
+}
+
+@media screen and (max-width: 1023px) and (max-height: 1023px){
+	.opa1{
+		width:100%;
+		background:red;
+	}
+}
